@@ -8,7 +8,7 @@ namespace App.Entities
 {
     public class Alumnos_Clase
     {
-        public int Id_Alumno { get; set; }
-        public int Id_Clase { get; set; }
+        public int IdAlumno { get; set; }
+        public int IdClase { get; set; }
     }
 }
