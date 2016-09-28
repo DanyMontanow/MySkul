@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace App.Entities
 {
-    
-   
     public class Docente
     {
         [Key]
@@ -17,6 +15,5 @@ namespace App.Entities
         public string ApellidoPaterno { get; set; }
         public string ApellidoMaterno { get; set; }
         public byte[] Foto { get; set; }
-    
     }
 }
