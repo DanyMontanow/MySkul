@@ -47,8 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alumno.cs" />
+    <Compile Include="Avisos.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Docente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publicacion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
