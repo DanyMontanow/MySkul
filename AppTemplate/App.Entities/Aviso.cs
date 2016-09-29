@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 namespace App.Entities
 {
-    public class Avisos
+    public class Aviso
     {
         [Key]
         public int Id { get; set; }
         public string Titulo { get; set; }
         public string Descripcion { get; set; }
         public DateTime FechaHora { get; set; }
+        public virtual ICollection<Comentario> Comentarios { get; set; }
+        public virtual ICollection<Enterado> Enterados { get; set; }
     }
 }

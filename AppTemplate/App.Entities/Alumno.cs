@@ -15,8 +15,12 @@ namespace App.Entities
         public string ApellidoMaterno { get; set; }
         public int NoControl { get; set; }
         public DateTime FechaDeNamiento { get; set; }
-        public string[] Foto { get; set; }
+        public string Foto { get; set; }
         public bool Jefe { get; set; }
+
+        public virtual ICollection<Enterado> Enterados { get; set; }
+        public virtual ICollection<Comentario> Comentarios { get; set; }
+
 
     }
 }
