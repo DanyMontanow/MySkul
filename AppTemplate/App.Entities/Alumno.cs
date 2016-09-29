@@ -15,7 +15,7 @@ namespace App.Entities
         public string ApellidoMaterno { get; set; }
         public int NoControl { get; set; }
         public DateTime FechaDeNamiento { get; set; }
-        public byte[] Foto { get; set; }
+        public string[] Foto { get; set; }
         public bool Jefe { get; set; }
     }
 }
