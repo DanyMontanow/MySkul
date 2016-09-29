@@ -17,6 +17,7 @@ namespace App.Entities
         public DateTime FechaDeNamiento { get; set; }
         public string[] Foto { get; set; }
         public bool Jefe { get; set; }
+
     }
 }
 
