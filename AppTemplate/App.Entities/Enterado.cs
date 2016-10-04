@@ -9,10 +9,19 @@ namespace App.Entities
 {
     public class Enterado
     {
+        /// <summary>
+        /// Llave primaria
+        /// </summary>
         [Key]
         public int Id { get; set; }
+        /// <summary>
+        /// Alumno
+        /// </summary>
         public int IdAlumno { get; set; }
         public Alumno Alumno { get; set; }
+        /// <summary>
+        /// Aviso
+        /// </summary>
         public int IdAviso { get; set; }
         public Aviso Aviso { get; set; }
     }

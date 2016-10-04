@@ -9,9 +9,15 @@ namespace App.Entities
 {
     public class Clase
     {
+        /// <summary>
+        /// Llave primaria
+        /// </summary>
         [Key]
         public int Id { get; set; }
+        /// <summary>
+        /// Materia
+        /// </summary>
         public int IdMateria { get; set; }
-        public int IdDocente { get; set; }
+        public Materia Materia { get; set; }       
     }
 }
