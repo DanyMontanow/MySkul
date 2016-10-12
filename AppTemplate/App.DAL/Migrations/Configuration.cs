@@ -10,8 +10,6 @@ namespace App.DAL.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            // register mysql code generator
-            SetSqlGenerator("MySql.Data.MySqlClient", new MySql.Data.Entity.MySqlMigrationSqlGenerator());
         }
 
         protected override void Seed(App.DAL.AppDBContext context)

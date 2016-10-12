@@ -17,9 +17,13 @@ namespace App.DAL
             base.OnModelCreating(modelBuilder);
         }
         public AppDBContext() : base("AppDBContext")
-       {
-
-       }
+        {
+            this.Configuration.ValidateOnSaveEnabled = false;
+        }
+        static AppDBContext()
+        {
+           DbConfiguration.SetConfiguration(new MySql.Data.Entity.MySqlEFConfiguration());
+        }
 
        public DbSet<Alumno> Alumno { get; set; }
        public DbSet<Alumnos_Clase> Alumno_Clase { get; set; }
