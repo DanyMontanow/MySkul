@@ -33,6 +33,17 @@ namespace App.DAL
             _contexto.Alumno.Remove(alumno);
             _contexto.SaveChanges();
         }
-
+        /// <summary>
+        /// muestra registros deseados
+        /// </summary>
+        /// <returns></returns>
+        public List<Alumno> TraerTodo ()
+        {
+            return _contexto.Alumno.OrderBy(x => x.NoControl).ToList();
+        }
+        public Alumno TraerId (int Id)
+        {
+            return _contexto.Alumno.FirstOrDefault(x => x.Id == Id);
+        }
     }
 }
