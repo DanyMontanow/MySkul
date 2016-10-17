@@ -12,12 +12,12 @@ namespace App.DAL.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Nombre = c.String(),
-                        ApellidoPaterno = c.String(),
-                        ApellidoMaterno = c.String(),
+                        Nombre = c.String(unicode: false),
+                        ApellidoPaterno = c.String(unicode: false),
+                        ApellidoMaterno = c.String(unicode: false),
                         NoControl = c.Int(nullable: false),
-                        FechaDeNamiento = c.DateTime(nullable: false),
-                        Foto = c.String(),
+                        FechaDeNamiento = c.DateTime(nullable: false, precision: 0),
+                        Foto = c.String(unicode: false),
                         Jefe = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
@@ -59,7 +59,7 @@ namespace App.DAL.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Nombre = c.String(),
+                        Nombre = c.String(unicode: false),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -68,10 +68,10 @@ namespace App.DAL.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Nombre = c.String(),
-                        ApellidoPaterno = c.String(),
-                        ApellidoMaterno = c.String(),
-                        Foto = c.String(),
+                        Nombre = c.String(unicode: false),
+                        ApellidoPaterno = c.String(unicode: false),
+                        ApellidoMaterno = c.String(unicode: false),
+                        Foto = c.String(unicode: false),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -96,9 +96,9 @@ namespace App.DAL.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Titulo = c.String(),
-                        Descripcion = c.String(),
-                        FechaHora = c.DateTime(nullable: false),
+                        Titulo = c.String(unicode: false),
+                        Descripcion = c.String(unicode: false),
+                        FechaHora = c.DateTime(nullable: false, precision: 0),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -124,9 +124,9 @@ namespace App.DAL.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         IdDocente = c.Int(nullable: false),
-                        Titulo = c.String(),
-                        Descripcion = c.String(),
-                        FechaHora = c.DateTime(nullable: false),
+                        Titulo = c.String(unicode: false),
+                        Descripcion = c.String(unicode: false),
+                        FechaHora = c.DateTime(nullable: false, precision: 0),
                     })
                 .PrimaryKey(t => t.Id);
             
