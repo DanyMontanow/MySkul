@@ -45,6 +45,7 @@
     <Compile Include="AvisoBLL.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="DocenteBLL.cs" />
+    <Compile Include="EnteradoBLL.cs" />
     <Compile Include="MateriaBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicacionBLL.cs" />
