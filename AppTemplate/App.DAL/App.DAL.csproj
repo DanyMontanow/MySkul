@@ -53,7 +53,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlumnosRepo.cs" />
+    <Compile Include="Alumnos_ClaseRepo.cs" />
     <Compile Include="AppDBContext.cs" />
+    <Compile Include="AvisoRepo.cs" />
+    <Compile Include="ComentarioRepo.cs" />
     <Compile Include="DocenteRepo.cs" />
     <Compile Include="MateriaRepo.cs" />
     <Compile Include="Migrations\201610140356177_init.cs" />
