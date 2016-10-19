@@ -39,7 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComentarioBLL.cs" />
     <Compile Include="AlumnosBLL.cs" />
+    <Compile Include="Alumnos_ClaseBLL.cs" />
+    <Compile Include="AvisoBLL.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="DocenteBLL.cs" />
     <Compile Include="MateriaBLL.cs" />
