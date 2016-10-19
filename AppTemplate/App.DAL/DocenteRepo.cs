@@ -19,9 +19,10 @@ namespace App.DAL
         /// Agregar docente
         /// </summary>
         /// <param name="docente"></param>
-        public void Agregar(Alumno docente)
+        /// 
+        public void Agregar(Docente docente)
         {
-            _contexto.Alumno.Add(docente);
+            _contexto.Docente.Add(docente);
             _contexto.SaveChanges();
         }
         /// <summary>

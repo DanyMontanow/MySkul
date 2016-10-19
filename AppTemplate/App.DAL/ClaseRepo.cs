@@ -7,43 +7,43 @@ using App.Entities;
 
 namespace App.DAL
 {
-    public class EnteradoRepo
+    public class ClaseRepo
     {
         private AppDBContext _contexto;
 
-        public EnteradoRepo()
+        public ClaseRepo()
         {
             _contexto = new AppDBContext();
         }
         /// <summary>
-        /// Agregar Alumno
+        /// Agregar docente
         /// </summary>
-        /// <param name="alumno"></param>
-        public void Agregar(Enterado enterado)
+        /// <param name="clase"></param>
+        public void Agregar(Clase clase)
         {
-            _contexto.Enterado.Add(enterado);
+            _contexto.Clase.Add(clase);
             _contexto.SaveChanges();
         }
         /// <summary>
-        /// Borrar alumno
+        /// Borrar docente
         /// </summary>
-        /// <param name="alumno"></param>
-        public void Borrar(Enterado enterado)
+        /// <param name="clase"></param>
+        public void Borrar(Clase clase)
         {
-            _contexto.Enterado.Remove(enterado);
+            _contexto.Clase.Remove(clase);
             _contexto.SaveChanges();
         }
         /// <summary>
         /// muestra registros deseados
         /// </summary>
         /// <returns></returns>
-        public List<Enterado> TraerTodo()
+        public List<Clase> TraerTodo()
         {
-            return _contexto.Enterado.OrderBy(x => x.Id).ToList();
+            return _contexto.Clase.OrderBy(x => x.Id).ToList();
         }
-        public Enterado TraerId(int Id)
+        public Clase TraerId(int Id)
         {
-            return _contexto.Enterado.FirstOrDefault(x => x.Id == Id);
+            return _contexto.Clase.FirstOrDefault(x => x.Id == Id);
         }
 
     }

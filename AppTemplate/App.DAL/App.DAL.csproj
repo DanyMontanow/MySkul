@@ -58,6 +58,7 @@
     <Compile Include="AvisoRepo.cs" />
     <Compile Include="ComentarioRepo.cs" />
     <Compile Include="DocenteRepo.cs" />
+    <Compile Include="EnteradoRepo.cs" />
     <Compile Include="MateriaRepo.cs" />
     <Compile Include="Migrations\201610140356177_init.cs" />
     <Compile Include="Migrations\201610140356177_init.Designer.cs">
